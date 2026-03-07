@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
-<title>Naveed Global Portal</title>
+
+<title>Naveed Fayaz</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
+background:black;
 color:white;
 overflow-x:hidden;
-background:#000;
 }
 
 /* animated background */
@@ -20,8 +22,8 @@ background:#000;
 position:fixed;
 width:100%;
 height:100%;
-background:linear-gradient(45deg,#0f172a,#020617,#1e293b);
-animation:move 10s infinite alternate;
+background:linear-gradient(45deg,#020617,#1e293b,#0f172a);
+animation:move 8s infinite alternate;
 z-index:-1;
 }
 
@@ -33,14 +35,19 @@ z-index:-1;
 nav{
 background:#020617;
 padding:15px;
-display:flex;
-justify-content:space-between;
+text-align:center;
 }
 
 nav a{
 color:white;
-margin:0 10px;
+margin:0 15px;
 text-decoration:none;
+font-weight:bold;
+}
+
+header{
+text-align:center;
+padding:100px 20px;
 }
 
 section{
@@ -50,42 +57,52 @@ text-align:center;
 
 .card{
 background:#1e293b;
+padding:25px;
+margin:20px;
+border-radius:12px;
+display:inline-block;
+width:260px;
+}
+
+.timeline{
+max-width:700px;
+margin:auto;
+}
+
+.timeline div{
+background:#1e293b;
 padding:20px;
 margin:20px;
 border-radius:10px;
-display:inline-block;
-width:250px;
+}
+
+.gallery img{
+width:200px;
+margin:10px;
+border-radius:10px;
+}
+
+.moviebox{
+background:#1e293b;
+padding:20px;
+margin:20px auto;
+width:400px;
+border-radius:10px;
 }
 
 button{
-padding:12px 20px;
-background:#22c55e;
+padding:10px 20px;
 border:none;
+background:#22c55e;
 color:white;
 border-radius:6px;
 cursor:pointer;
 }
 
-/* chat box */
-
-#chat{
-width:300px;
-height:200px;
+footer{
 background:#020617;
-overflow:auto;
-margin:auto;
-padding:10px;
-border-radius:10px;
-}
-
-input{
-padding:10px;
-margin:5px;
-}
-
-canvas{
-background:black;
-margin-top:20px;
+padding:20px;
+text-align:center;
 }
 
 </style>
@@ -98,177 +115,211 @@ margin-top:20px;
 
 <nav>
 
-<div>
-<a href="#home">Home</a>
-<a href="#game">Game</a>
-<a href="#video">Video</a>
-<a href="#chatsec">Chat</a>
-</div>
-
-<select onchange="changeLang(this.value)">
-<option value="en">English</option>
-<option value="hi">Hindi</option>
-<option value="ur">Urdu</option>
-<option value="fr">French</option>
-<option value="es">Spanish</option>
-<option value="de">German</option>
-<option value="ar">Arabic</option>
-<option value="zh">Chinese</option>
-<option value="ru">Russian</option>
-<option value="ja">Japanese</option>
-</select>
+<a href="#about">About</a>
+<a href="#timeline">Timeline</a>
+<a href="#skills">Skills</a>
+<a href="#football">Football</a>
+<a href="#photos">Photos</a>
+<a href="#movies">Movies</a>
 
 </nav>
 
-<section id="home">
+<header>
 
-<h1 id="title">Welcome to Naveed's Portal</h1>
+<h1>Naveed Fayaz</h1>
 
-<p id="intro">
-Global website with games, chat and videos.
+<p>Technology Learner | Cinema Enthusiast | Football Player</p>
+
+</header>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I was born on **17 October 2005**.
+
+I studied at **JNV Anantnag** from class 6 to 10 in Jammu & Kashmir.  
+Later I moved to **LBS Kota** for class 11 and 12 where I chose Mathematics  
+and started preparing for **JEE**.
+
+I enjoy **technology, programming, cinema and football**.
+
+I have watched **300+ movies** and love exploring great cinema.
+
 </p>
 
+</section>
+
+<section id="timeline">
+
+<h2>Life Timeline</h2>
+
+<div class="timeline">
+
+<div>
+
+<h3>2005</h3>
+
+<p>Born on 17 October</p>
+
+</div>
+
+<div>
+
+<h3>School Years</h3>
+
+<p>Studied at JNV Anantnag (Class 6–10)</p>
+
+</div>
+
+<div>
+
+<h3>Kota Journey</h3>
+
+<p>Moved to LBS Kota for Class 11–12 and JEE preparation</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
 <div class="card">
-<h3>Projects</h3>
-<p>Coding experiments</p>
+
+<h3>Programming</h3>
+
+<p>Python, HTML, CSS</p>
+
 </div>
 
 <div class="card">
-<h3>Gaming</h3>
-<p>BGMI content</p>
+
+<h3>Technology</h3>
+
+<p>Linux systems and software experiments</p>
+
 </div>
 
 <div class="card">
-<h3>Movies</h3>
-<p>Cinema discussions</p>
+
+<h3>Cinema Knowledge</h3>
+
+<p>Watched 300+ films</p>
+
 </div>
 
 </section>
 
-<section id="video">
+<section id="football">
 
-<h2>Video</h2>
+<h2>Football</h2>
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-frameborder="0" allowfullscreen>
-</iframe>
+<p>
 
-</section>
+Football is one of my favorite sports.  
+I enjoy playing regularly and improving teamwork and strategy.
 
-<section id="game">
-
-<h2>Mini Game</h2>
-
-<canvas id="gameCanvas" width="400" height="300"></canvas>
+</p>
 
 </section>
 
-<section id="chatsec">
+<section id="photos">
 
-<h2>Chat</h2>
+<h2>Photo Gallery</h2>
 
-<div id="chat"></div>
+<div class="gallery">
 
-<input id="msg" placeholder="Type message">
-<button onclick="send()">Send</button>
+<img src="photo1.jpg">
+
+<img src="football1.jpg">
+
+<img src="education1.jpg">
+
+</div>
+
+<p>You can upload your personal, football and education photos here.</p>
+
+</section>
+
+<section id="movies">
+
+<h2>Movie Collection</h2>
+
+<div class="moviebox">
+
+<h3>Favorite Movies</h3>
+
+<ul id="favmovies">
+
+<li>The Godfather</li>
+<li>Apocalypse Now</li>
+
+</ul>
+
+<input id="favinput" placeholder="Add favorite movie">
+
+<button onclick="addFav()">Add</button>
+
+</div>
+
+<div class="moviebox">
+
+<h3>Movies I Watched</h3>
+
+<ul id="watched">
+
+<li>Stalker</li>
+<li>Chungking Express</li>
+
+</ul>
+
+<input id="watchinput" placeholder="Add watched movie">
+
+<button onclick="addWatch()">Add</button>
+
+</div>
 
 </section>
 
-<section id="login">
+<footer>
 
-<h2>Secret Login</h2>
+<p>© 2026 Naveed Fayaz</p>
 
-<input id="user" placeholder="username">
-<input id="pass" placeholder="password" type="password">
-
-<button onclick="login()">Login</button>
-
-<p id="loginmsg"></p>
-
-</section>
+</footer>
 
 <script>
 
-/* language system */
+function addFav(){
 
-const t={
-en:{
-title:"Welcome to Naveed's Portal",
-intro:"Global website with games, chat and videos."
-},
-hi:{
-title:"नवीद के पोर्टल में आपका स्वागत है",
-intro:"यह वेबसाइट गेम, चैट और वीडियो के साथ है।"
-},
-ur:{
-title:"نوید کے پورٹل میں خوش آمدید",
-intro:"یہ ویب سائٹ گیم، چیٹ اور ویڈیو کے ساتھ ہے۔"
-}
-};
+let input=document.getElementById("favinput")
 
-function changeLang(l){
-if(t[l]){
-document.getElementById("title").innerText=t[l].title;
-document.getElementById("intro").innerText=t[l].intro;
-}
-}
+let li=document.createElement("li")
 
-/* chat */
+li.textContent=input.value
 
-function send(){
+document.getElementById("favmovies").appendChild(li)
 
-let msg=document.getElementById("msg").value;
-
-let box=document.getElementById("chat");
-
-box.innerHTML+="<p>"+msg+"</p>";
-
-document.getElementById("msg").value="";
+input.value=""
 
 }
 
-/* simple game */
+function addWatch(){
 
-let canvas=document.getElementById("gameCanvas");
-let ctx=canvas.getContext("2d");
+let input=document.getElementById("watchinput")
 
-let x=50;
+let li=document.createElement("li")
 
-function game(){
+li.textContent=input.value
 
-ctx.clearRect(0,0,400,300);
+document.getElementById("watched").appendChild(li)
 
-ctx.fillStyle="lime";
-
-ctx.fillRect(x,150,20,20);
-
-x+=2;
-
-if(x>400)x=0;
-
-requestAnimationFrame(game);
-
-}
-
-game();
-
-/* login */
-
-function login(){
-
-let u=document.getElementById("user").value;
-let p=document.getElementById("pass").value;
-
-if(u=="naveed" && p=="1234"){
-
-document.getElementById("loginmsg").innerText="Access Granted";
-
-}else{
-
-document.getElementById("loginmsg").innerText="Access Denied";
-
-}
+input.value=""
 
 }
 
